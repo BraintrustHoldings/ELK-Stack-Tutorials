@@ -1,5 +1,17 @@
 # ELK Stack Tutorials
 
+  * [ELK Stack Tutorials](#elk-stack-tutorials)
+    * [Introduction](#introduction)
+    * [Requirements](#requirements)
+    * [ELK Component Overview](#elk-component-overview)
+      * [ElasticSearch](#elasticsearch)
+      * [Logstash](#logstash)
+      * [Kibana](#kibana)
+      * [Redis](#redis)
+    * [Getting Started](#getting-started)
+
+Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
+
 ## Introduction
 
 This repository contains a series of tutorials outlining the installation and configuration of the ELK
@@ -59,6 +71,6 @@ and provides high availability via Redis Sentinel and automatic partitioning wit
 
 ## Getting Started
 
-Now that we have gone through the overview and requirements, head over to the [Logstash](logstash/README.md)
+Now that we have gone through the overview and requirements, head over to the [Logstash](Logstash/README.md)
 module to get started.
 

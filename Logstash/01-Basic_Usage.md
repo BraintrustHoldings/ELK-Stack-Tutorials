@@ -1,5 +1,24 @@
 # Logstash Basic Usage
 
+  * [Logstash Basic Usage](#logstash-basic-usage)
+    * [Introduction](#introduction)
+    * [Basic Commands](#basic-commands)
+      * [Starting / Stopping / Status / Checkconfig](#starting--stopping--status--checkconfig)
+    * [Configuring Logstash](#configuring-logstash)
+      * [Basic Configuration](#basic-configuration)
+        * [Input Plugins](#input-plugins)
+          * [Generator Plugin](#generator-plugin)
+        * [Output Plugins](#output-plugins)
+        * [stdout plugin](#stdout-plugin)
+      * [First Logstash Startup](#first-logstash-startup)
+        * [Validate Configuration](#validate-configuration)
+        * [Start Logstash](#start-logstash)
+      * [Understanding the Output](#understanding-the-output)
+    * [Gotcha's / Troubleshooting](#gotchas--troubleshooting)
+    * [Next Steps](#next-steps)
+
+Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
+
 ## Introduction
 This module will outling the basic usage of Logstash including starting, stopping,
 and checking the status of the logstash service. In addition, an overview of the
