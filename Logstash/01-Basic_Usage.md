@@ -64,7 +64,7 @@ We will go over this in more detail in the future.
 ### Basic Configuration
 To start, let's place the following basic config in the Logstash configuration directory ```/etc/conf.d/logstash```:
 
-(Note: This file can also be found [here](src/main/resource/com/braintrust/logstash/01-Basic_Usage/logstash-basic.conf))
+(Note: This file can also be found [here](src/main/resources/com/braintrust/logstash/01-Basic_Usage/logstash-basic.conf))
 ```
 input {
   generator {
@@ -92,7 +92,7 @@ website. We will start by using the [Generator](https://www.elastic.co/guide/en/
 This plugin is defined by the generator {} JSON document. Inside we define the lines that we wish to have printed and sent into
 the logstash process. The count paramater says to print these lines three times.
 
-#### Output Plugins
+### Output Plugins
 The ```output plugin``` section is where you define the different destinations Logstash should send its parsed output.
 There are many different [output plugins](https://www.elastic.co/guide/en/logstash/current/output-plugins.html) supported
 and you can find the full listing on the Elastic website.
@@ -202,13 +202,10 @@ The ``@timestamp`` field is very import. This is the field that ElasticSearch wi
 events. It is important to ensure that each of your message being parsed by Logstash has an accurate timestamp. Otherwise,
 your events could be stored in a wrong index or in an unexpected location.
 
+## Next Steps
+Now that we have successfully configured and started Logstash for the first time, we can being to look at more advanced
+configuration options and perform our first Grok operations in [Module 2 - Configuration and Grok](02-Configuration_And_Grok.md).
+
 ## Gotcha's / Troubleshooting
 If the Logstash process is failing to start, be sure that all the Logstash configuration files
 are readable by the logstash user (this user should have been added by the RPM install).
-
-## Next Steps
-Now that we have successfully configured and started Logstash for the first time, we can being to look at more advanced
-configuration options. 
-
-
-
