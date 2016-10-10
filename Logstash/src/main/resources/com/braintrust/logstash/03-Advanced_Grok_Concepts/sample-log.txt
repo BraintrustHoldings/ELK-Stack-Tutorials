@@ -1,0 +1,9 @@
+2016-09-14 19:23:21,442 BrainTrust.host-8001  DEBUG com.braintrust.http.controller.Controller -   - Controller: init
+2016-09-14 19:23:21,443 BrainTrust.host-8001  INFO com.braintrust.http.controller.Controller -   - NavigationFile=/WEB-INF/mvc/Navigation.xml
+2016-09-14 19:23:21,514 BrainTrust.host-8001  ERROR com.braintrust.WorkerFactory -   - Could not find the target file
+    java.io.IOException: Could not find the target file
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+    at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+2016-09-14 19:23:21,515 BrainTrust.host-8001  WARN com.braintrust.WorkerFactory -   - Some Warning Here with coolFieldToGrab: cool value, more logging
+2016-09-14 19:23:21,516 BrainTrust.host-8001  INFO com.braintrust.Navigation -   - Navigation update completed, switching to live rule set

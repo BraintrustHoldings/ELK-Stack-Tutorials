@@ -216,7 +216,7 @@ Here is some sample output with these filter plugins enabled and configured:
 ## Next Steps
 Now that we have taken a look at configuring Logstash to tail real files on the file system, gained an understanding
 of the Logstash configuration, and setup some filter plugin's we are ready to move on to advanced grok techniques in
-[Module 03 - Advanced Groking](03-Advanced_Groking.md)
+[Module 03 - Advanced Grok Concepts](03-Advanced_Grok_Concepts.md)
 
 
 
