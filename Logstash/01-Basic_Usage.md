@@ -38,11 +38,11 @@ service logstash start
 ```
 Stopping Logstash:
 ```
-service logstash start
+service logstash stop
 ```
 Status of Logstash:
 ```
-service logstash start
+service logstash status
 ```
 This will tell you if the logstash service is running or is stopped.
 
