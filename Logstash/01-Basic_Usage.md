@@ -47,14 +47,14 @@ service logstash status
 This will tell you if the logstash service is running or is stopped.
 
 ```
-service logstash checkconfig
+service logstash configtest
 ```
-Since we have put any configuration files in ```/etc/conf.d/logstash```, Logstash will not
+Since we have not put any configuration files in ```/etc/logstash/conf.d```, Logstash will not
 have anything to check against and will let us know. Let us take a look at adding a basic
 configuration.
 
 ## Configuring Logstash
-Logstash will read all the files contained in ```/etc/conf.d/logstash``` for its configuration.
+Logstash will read all the files contained in ```/etc/logstash/conf.d``` for its configuration.
 It is important to note that Logstash will concatonate ***ALL*** files present in that directory
 together to build its configuration. What this means is that if you are setting up multiple
 configuration files to handle multiple input and output destinations, you will need to guard
@@ -62,7 +62,7 @@ each section carefully to not have multiple copies of each input sent to each de
 We will go over this in more detail in the future.
 
 ### Basic Configuration
-To start, let's place the following basic config in the Logstash configuration directory ```/etc/conf.d/logstash```:
+To start, let's place the following basic config in the Logstash configuration directory ```/etc/logstash/conf.d```:
 
 (Note: This file can also be found [here](src/main/resources/com/braintrust/logstash/01-Basic_Usage/logstash-basic.conf))
 ```
