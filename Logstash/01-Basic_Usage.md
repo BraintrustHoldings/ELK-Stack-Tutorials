@@ -98,7 +98,9 @@ There are many different [output plugins](https://www.elastic.co/guide/en/logsta
 and you can find the full listing on the Elastic website.
 
 #### stdout plugin
-The stdout output plugin simply tells Logstash to dump the parsed output of each line to stdout.
+The stdout output plugin simply tells Logstash to dump the parsed output of each line to stdout. However, since we
+are using the RPM installation, all of our output will go to ```/var/log/logstash/logstash.stdout```. You can also
+see the logstash appliction file in the same directory, ```/var/log/logstash/logstash.log```.
 
 ### First Logstash Startup
 Now that we have our basic configuration file in place, let us run logstash for the first time.
@@ -114,7 +116,8 @@ With our configuration valid, we can now start Logstash:
 ```
 service logstash start
 ```
-Here is a sample output that should be printed on the screen once the process comes up:
+Here is a sample output that should be printed in the ```/var/log/logstash/logstash.stdout``` file
+once the process comes up:
 ```
 {:timestamp=>"2016-09-13T20:09:49.987000-0400", :message=>"Pipeline main started"}
 {
